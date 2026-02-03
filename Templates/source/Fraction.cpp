@@ -1,4 +1,5 @@
 #include "Fraction.h"
+#include <numeric>
 
 Fraction::Fraction(int a, int b) : numerator(a), denominator(b) 
 {
@@ -10,22 +11,10 @@ Fraction Fraction::Multiply(Fraction other)
     return Fraction(numerator * other.numerator, denominator * other.denominator);
 }
 
-int gcd(int a, int b)
-{
-    int x;
-    while (b != 0)
-    {
-        x = b;
-        b = a % b;
-        a = x;
-    }
-    return a;
-}
-
 void Fraction::Simplify()
 {
     int n;
-    while((n = gcd(numerator, denominator)) != 1)
+    while((n = std::gcd(numerator, denominator)) != 1)
     {
         numerator /= n;
         denominator /= n;
