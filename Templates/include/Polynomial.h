@@ -1,3 +1,3 @@
 #pragma once
 
-int quadratic(int a, int b, int c, int x);
+int quadratic(int x, int a, int b, int c);

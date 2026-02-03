@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(animals_exercise
+project(rendering_exercise
   VERSION 0.0.1
   LANGUAGES CXX
 )

@@ -1,6 +1,6 @@
 #include "Polynomial.h"
 
-int quadratic(int a, int b, int c, int x)
+int quadratic(int x, int a, int b, int c)
 {
-    return a*x*x + b*x + c;
+    return a + b*x + c*x*x;
 }
