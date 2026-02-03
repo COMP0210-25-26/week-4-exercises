@@ -1,6 +1,5 @@
 #pragma once
 #include "ImageUtils.h"
-#include <array>
 
 // Define the Shape interface
 class Shape
